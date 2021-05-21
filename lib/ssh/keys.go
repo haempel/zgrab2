@@ -24,11 +24,11 @@ import (
 	"math/big"
 	"strings"
 
-	"github.com/zmap/zcrypto/dsa"
+	"github.com/haempel/zcrypto/dsa"
 
 	"golang.org/x/crypto/ed25519"
 
-	ztoolsX509 "github.com/zmap/zcrypto/x509"
+	ztoolsX509 "github.com/haempel/zcrypto/x509"
 	ztoolsKeys "github.com/zmap/zgrab2/tools/keys"
 )
 

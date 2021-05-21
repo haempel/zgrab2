@@ -42,7 +42,7 @@ import (
 	"sync"
 	"time"
 
-	"github.com/zmap/zcrypto/tls"
+	"github.com/haempel/zcrypto/tls"
 	"golang.org/x/net/http2/hpack"
 	"golang.org/x/net/idna"
 	"golang.org/x/net/http/httpguts"

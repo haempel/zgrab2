@@ -12,8 +12,8 @@ import (
 	"time"
 
 	log "github.com/sirupsen/logrus"
-	"github.com/zmap/zcrypto/tls"
-	"github.com/zmap/zcrypto/x509"
+	"github.com/haempel/zcrypto/tls"
+	"github.com/haempel/zcrypto/x509"
 )
 
 // Shared code for TLS scans.

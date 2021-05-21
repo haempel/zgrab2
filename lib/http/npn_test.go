@@ -13,7 +13,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/zmap/zcrypto/tls"
+	"github.com/haempel/zcrypto/tls"
 	. "github.com/zmap/zgrab2/lib/http"
 	"github.com/zmap/zgrab2/lib/http/httptest"
 )

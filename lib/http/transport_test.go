@@ -34,7 +34,7 @@ import (
 
 	"github.com/zmap/zgrab2/lib/http/httputil"
 	//"github.com/zmap/zgrab2/lib/http/nettrace"
-	"github.com/zmap/zcrypto/tls"
+	"github.com/haempel/zcrypto/tls"
 	. "github.com/zmap/zgrab2/lib/http"
 	"github.com/zmap/zgrab2/lib/http/httptest"
 	"github.com/zmap/zgrab2/lib/http/httptrace"
