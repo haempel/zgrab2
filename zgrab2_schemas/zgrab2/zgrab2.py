@@ -66,7 +66,7 @@ tls_log = SubRecord({
 
 # Register a schema type for responses with the given name.
 def register_scan_response_type(name, schema):
-    scan_response_types[name] = schema
+    scan_response_types["response"] = schema
 
 
 zschema.registry.register_schema("zgrab2", grab_result)
