@@ -27,7 +27,7 @@ import (
 	"sync/atomic"
 	"time"
 
-	"github.com/zmap/zcrypto/tls"
+	"github.com/haempel/zcrypto/tls"
 	"golang.org/x/net/http/httpguts"
 )
 

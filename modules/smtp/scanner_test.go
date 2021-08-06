@@ -1,8 +1,9 @@
 package smtp
 
 import (
-	"github.com/zmap/zgrab2"
 	"testing"
+
+	"github.com/haempel/zgrab2"
 )
 
 func TestVerifySMTPContents(t *testing.T) {

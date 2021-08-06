@@ -11,8 +11,8 @@ import (
 	"testing"
 	"time"
 
-	"github.com/zmap/zcrypto/tls"
-	"github.com/zmap/zgrab2"
+	"github.com/haempel/zcrypto/tls"
+	"github.com/haempel/zgrab2"
 )
 
 // BEGIN Taken from handshake_server_test.go -- certs for TLS server

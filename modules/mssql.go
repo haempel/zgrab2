@@ -1,6 +1,6 @@
 package modules
 
-import "github.com/zmap/zgrab2/modules/mssql"
+import "github.com/haempel/zgrab2/modules/mssql"
 
 func init() {
 	mssql.RegisterModule()

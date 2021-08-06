@@ -1,6 +1,6 @@
 package modules
 
-import "github.com/zmap/zgrab2/modules/redis"
+import "github.com/haempel/zgrab2/modules/redis"
 
 func init() {
 	redis.RegisterModule()

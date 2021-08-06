@@ -15,7 +15,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/zmap/zgrab2/lib/http"
+	"github.com/haempel/zgrab2/lib/http"
 )
 
 var quietLog = log.New(ioutil.Discard, "", 0)
@@ -101,12 +101,12 @@ func afterTest(t testing.TB) {
 	}
 	var bad string
 	badSubstring := map[string]string{
-		").readLoop(":                                  "a Transport",
-		").writeLoop(":                                 "a Transport",
+		").readLoop(":  "a Transport",
+		").writeLoop(": "a Transport",
 		"created by net/http/httptest.(*Server).Start": "an httptest.Server",
-		"timeoutHandler":                               "a TimeoutHandler",
-		"net.(*netFD).connect(":                        "a timing out dial",
-		").noteClientGone(":                            "a closenotifier sender",
+		"timeoutHandler":        "a TimeoutHandler",
+		"net.(*netFD).connect(": "a timing out dial",
+		").noteClientGone(":     "a closenotifier sender",
 	}
 	var stacks string
 	for i := 0; i < 4; i++ {

@@ -7,9 +7,9 @@ package mysql
 import (
 	"reflect"
 
+	"github.com/haempel/zgrab2"
+	"github.com/haempel/zgrab2/lib/mysql"
 	log "github.com/sirupsen/logrus"
-	"github.com/zmap/zgrab2"
-	"github.com/zmap/zgrab2/lib/mysql"
 )
 
 // ScanResults contains detailed information about the scan.

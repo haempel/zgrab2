@@ -11,9 +11,9 @@ import (
 	"net/url"
 	"strings"
 
-	"github.com/zmap/zgrab2/lib/http"
-	"github.com/zmap/zgrab2/lib/http/httptest"
-	"github.com/zmap/zgrab2/lib/http/httputil"
+	"github.com/haempel/zgrab2/lib/http"
+	"github.com/haempel/zgrab2/lib/http/httptest"
+	"github.com/haempel/zgrab2/lib/http/httputil"
 )
 
 func ExampleDumpRequest() {

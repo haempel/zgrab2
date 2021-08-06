@@ -19,7 +19,7 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/zmap/zcrypto/tls"
+	"github.com/haempel/zcrypto/tls"
 )
 
 var respExcludeHeader = map[string]bool{

@@ -12,7 +12,7 @@ import (
 
 	"encoding/hex"
 
-	"github.com/zmap/zgrab2/lib/smb/smb/encoder"
+	"github.com/haempel/zgrab2/lib/smb/smb/encoder"
 )
 
 const Signature = "NTLMSSP\x00"

@@ -1,6 +1,6 @@
 package modules
 
-import "github.com/zmap/zgrab2/modules/imap"
+import "github.com/haempel/zgrab2/modules/imap"
 
 func init() {
 	imap.RegisterModule()

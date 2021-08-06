@@ -16,8 +16,8 @@ import (
 	"sync"
 	"time"
 
-	"github.com/zmap/zcrypto/tls"
-	"github.com/zmap/zgrab2/lib/http"
+	"github.com/haempel/zcrypto/tls"
+	"github.com/haempel/zgrab2/lib/http"
 )
 
 // A Server is an HTTP server listening on a system-chosen port on the

@@ -23,8 +23,8 @@ import (
 	"strconv"
 	"time"
 
+	"github.com/haempel/zgrab2"
 	log "github.com/sirupsen/logrus"
-	"github.com/zmap/zgrab2"
 )
 
 var (

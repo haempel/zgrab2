@@ -20,13 +20,13 @@ import (
 	"io/ioutil"
 	"os/exec"
 
+	jsonKeys "github.com/haempel/zcrypto/json"
+	"github.com/haempel/zcrypto/tls"
+	"github.com/haempel/zcrypto/x509"
+	"github.com/haempel/zcrypto/x509/pkix"
+	"github.com/haempel/zgrab2"
+	"github.com/haempel/zgrab2/lib/output"
 	"github.com/sirupsen/logrus"
-	jsonKeys "github.com/zmap/zcrypto/json"
-	"github.com/zmap/zcrypto/tls"
-	"github.com/zmap/zcrypto/x509"
-	"github.com/zmap/zcrypto/x509/pkix"
-	"github.com/zmap/zgrab2"
-	"github.com/zmap/zgrab2/lib/output"
 )
 
 const doFailDiffs = false

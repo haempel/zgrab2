@@ -12,7 +12,7 @@ import (
 	"regexp"
 	"strconv"
 
-	"github.com/zmap/zgrab2"
+	"github.com/haempel/zgrab2"
 )
 
 // Flags give the command-line flags for the banner module.

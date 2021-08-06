@@ -14,6 +14,7 @@ import (
 	"io/ioutil"
 	"log"
 	"net"
+
 	//"net/http/httputil"
 	"net/url"
 	"os"
@@ -22,13 +23,14 @@ import (
 	"sort"
 	"strings"
 	"sync"
+
 	//"sync/atomic"
 	"testing"
 	"time"
 
-	"github.com/zmap/zcrypto/tls"
-	. "github.com/zmap/zgrab2/lib/http"
-	"github.com/zmap/zgrab2/lib/http/httptest"
+	"github.com/haempel/zcrypto/tls"
+	. "github.com/haempel/zgrab2/lib/http"
+	"github.com/haempel/zgrab2/lib/http/httptest"
 )
 
 type clientServerTest struct {

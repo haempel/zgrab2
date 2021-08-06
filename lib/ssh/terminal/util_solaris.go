@@ -4,12 +4,13 @@
 
 // +build solaris
 
-package terminal // import "github.com/zmap/zgrab2/lib/ssh/terminal"
+package terminal // import "github.com/haempel/zgrab2/lib/ssh/terminal"
 
 import (
-	"golang.org/x/sys/unix"
 	"io"
 	"syscall"
+
+	"golang.org/x/sys/unix"
 )
 
 // State contains the state of a terminal.

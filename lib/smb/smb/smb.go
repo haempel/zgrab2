@@ -4,9 +4,9 @@ import (
 	"errors"
 	"fmt"
 
-	"github.com/zmap/zgrab2/lib/smb/gss"
-	"github.com/zmap/zgrab2/lib/smb/ntlmssp"
-	"github.com/zmap/zgrab2/lib/smb/smb/encoder"
+	"github.com/haempel/zgrab2/lib/smb/gss"
+	"github.com/haempel/zgrab2/lib/smb/ntlmssp"
+	"github.com/haempel/zgrab2/lib/smb/smb/encoder"
 )
 
 const ProtocolSmb = "\xFFSMB"
@@ -170,7 +170,7 @@ type NegotiateResV1 struct {
 	ServerTimezon   uint16
 	ChallengeLength uint8
 	ByteCount       uint16 `smb:"len:VarData"`
-	VarData []byte
+	VarData         []byte
 }
 
 type NegotiateReq struct {

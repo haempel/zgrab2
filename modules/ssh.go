@@ -5,9 +5,9 @@ import (
 	"strconv"
 	"strings"
 
+	"github.com/haempel/zgrab2"
+	"github.com/haempel/zgrab2/lib/ssh"
 	log "github.com/sirupsen/logrus"
-	"github.com/zmap/zgrab2"
-	"github.com/zmap/zgrab2/lib/ssh"
 )
 
 type SSHFlags struct {

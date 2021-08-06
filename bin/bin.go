@@ -11,9 +11,9 @@ import (
 	"runtime"
 	"strings"
 
+	"github.com/haempel/zgrab2"
 	log "github.com/sirupsen/logrus"
 	flags "github.com/zmap/zflags"
-	"github.com/zmap/zgrab2"
 )
 
 // Get the value of the ZGRAB2_MEMPROFILE variable (or the empty string).

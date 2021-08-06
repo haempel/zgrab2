@@ -67,7 +67,7 @@ func GetFlagMapFromList(bits []string) FlagMap {
 
 // FlagsToSet converts an integer flags variable to a set of string labels
 // corresponding to each bit, in the format described by the wiki (see
-// https://github.com/zmap/zgrab2/wiki/Scanner-details).
+// https://github.com/haempel/zgrab2/wiki/Scanner-details).
 // The mapping maps the bit mask value (i.e. a number of the form (1 << x)) to
 // the label for that bit.
 // Flags not present in mapping are appended to the unknown list.
@@ -78,7 +78,7 @@ func FlagsToSet(flags uint64, mapping map[uint64]string) (map[string]bool, []uin
 
 // ListFlagsToSet converts an integer flags variable to a set of string labels
 // corresponding to each bit, in the format described by the wiki (see
-// https://github.com/zmap/zgrab2/wiki/Scanner-details).
+// https://github.com/haempel/zgrab2/wiki/Scanner-details).
 // The ith entry of labels gives the label for the ith bit (i.e. flags & (1<<i)).
 // Empty strings in labels are treated as unknown, as are bits beyond the end
 // of the list. Unknown flags are appended to the unknown list.
@@ -163,4 +163,3 @@ func OutputResults(w *bufio.Writer, results <-chan []byte) error {
 	w.WriteString("]")
 	return nil
 }
-
