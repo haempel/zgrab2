@@ -14,11 +14,6 @@ import (
 	"github.com/haempel/zcrypto/tls"
 	"github.com/haempel/zcrypto/x509"
 	log "github.com/sirupsen/logrus"
-<<<<<<< HEAD
-=======
-	"github.com/haempel/zcrypto/tls"
-	"github.com/haempel/zcrypto/x509"
->>>>>>> master
 )
 
 // Shared code for TLS scans.

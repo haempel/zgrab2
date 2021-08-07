@@ -43,10 +43,7 @@ import (
 	"time"
 
 	"github.com/haempel/zcrypto/tls"
-<<<<<<< HEAD
 	"golang.org/x/net/http/httpguts"
-=======
->>>>>>> master
 	"golang.org/x/net/http2/hpack"
 	"golang.org/x/net/idna"
 )

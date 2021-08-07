@@ -27,15 +27,9 @@ import (
 
 	"github.com/haempel/zcrypto/tls"
 	"github.com/haempel/zcrypto/x509"
-<<<<<<< HEAD
 	. "github.com/haempel/zgrab2/lib/http"
 	"github.com/haempel/zgrab2/lib/http/cookiejar"
 	"github.com/haempel/zgrab2/lib/http/httptest"
-=======
-	. "github.com/zmap/zgrab2/lib/http"
-	"github.com/zmap/zgrab2/lib/http/cookiejar"
-	"github.com/zmap/zgrab2/lib/http/httptest"
->>>>>>> master
 )
 
 var robotsTxtHandler = HandlerFunc(func(w ResponseWriter, r *Request) {

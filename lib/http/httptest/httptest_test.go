@@ -13,11 +13,7 @@ import (
 	"testing"
 
 	"github.com/haempel/zcrypto/tls"
-<<<<<<< HEAD
 	"github.com/haempel/zgrab2/lib/http"
-=======
-	"github.com/zmap/zgrab2/lib/http"
->>>>>>> master
 )
 
 func TestNewRequest(t *testing.T) {

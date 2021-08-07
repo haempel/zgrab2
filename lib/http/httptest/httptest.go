@@ -13,11 +13,7 @@ import (
 	"strings"
 
 	"github.com/haempel/zcrypto/tls"
-<<<<<<< HEAD
 	"github.com/haempel/zgrab2/lib/http"
-=======
-	"github.com/zmap/zgrab2/lib/http"
->>>>>>> master
 )
 
 // NewRequest returns a new incoming server Request, suitable

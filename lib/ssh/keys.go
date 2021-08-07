@@ -29,11 +29,7 @@ import (
 	"golang.org/x/crypto/ed25519"
 
 	ztoolsX509 "github.com/haempel/zcrypto/x509"
-<<<<<<< HEAD
 	ztoolsKeys "github.com/haempel/zgrab2/tools/keys"
-=======
-	ztoolsKeys "github.com/zmap/zgrab2/tools/keys"
->>>>>>> master
 )
 
 // These constants represent the algorithm names for key types supported by this
