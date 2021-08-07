@@ -4,11 +4,11 @@ go 1.12
 
 require (
 	github.com/golang/protobuf v1.5.2 // indirect
-	github.com/haempel/zcrypto v0.0.0-20210805185659-45d858e1d566
 	github.com/prometheus/client_golang v1.10.0
 	github.com/prometheus/common v0.20.0 // indirect
 	github.com/sirupsen/logrus v1.8.1
 	github.com/zmap/rc2 v0.0.0-20190804163417-abaa70531248 // indirect
+	github.com/haempel/zcrypto v0.0.0-20210805185659-45d858e1d566
 	github.com/zmap/zflags v1.4.0-beta.1.0.20200204220219-9d95409821b6
 	golang.org/x/crypto v0.0.0-20210322153248-0c34fe9e7dc2
 	golang.org/x/net v0.0.0-20210405180319-a5a99cb37ef4
