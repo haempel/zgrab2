@@ -4,7 +4,7 @@ package #{MODULE_NAME}
 
 import (
 	log "github.com/sirupsen/logrus"
-	"github.com/haempel/zgrab2"
+	"github.com/zmap/zgrab2"
 )
 
 // ScanResults instances are returned by the module's Scan function.

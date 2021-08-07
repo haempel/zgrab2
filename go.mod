@@ -4,7 +4,7 @@ go 1.12
 
 require (
 	github.com/golang/protobuf v1.5.2 // indirect
-	github.com/haempel/zcrypto v0.0.0-20210805185659-45d858e1d566
+	github.com/haempel/zcrypto v0.0.0-20210806082605-e8d34626db73
 	github.com/prometheus/client_golang v1.10.0
 	github.com/prometheus/common v0.20.0 // indirect
 	github.com/sirupsen/logrus v1.8.1
@@ -19,4 +19,4 @@ require (
 	gopkg.in/yaml.v2 v2.4.0
 )
 
-replace github.com/zmap/zgrab2 v0.1.8-0.20210409193607-5e9507cacf0a => github.com/haempel/zgrab2 v0.1.8-0.20210521162212-5fa636c1d2d7
+replace github.com/zmap/zgrab2 5e9507cacf0a7f5cd57aa17a48b29ce6cde76de9 => github.com/haempel/zgrab2 5fa636c1d2d76dc3afb2911194cdc1b906c4e9f4
