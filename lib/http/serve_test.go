@@ -35,9 +35,15 @@ import (
 	"time"
 
 	"github.com/haempel/zcrypto/tls"
+<<<<<<< HEAD
 	. "github.com/haempel/zgrab2/lib/http"
 	"github.com/haempel/zgrab2/lib/http/httptest"
 	"github.com/haempel/zgrab2/lib/http/httputil"
+=======
+	. "github.com/zmap/zgrab2/lib/http"
+	"github.com/zmap/zgrab2/lib/http/httptest"
+	"github.com/zmap/zgrab2/lib/http/httputil"
+>>>>>>> master
 )
 
 type dummyAddr string

@@ -17,7 +17,11 @@ import (
 	"time"
 
 	"github.com/haempel/zcrypto/tls"
+<<<<<<< HEAD
 	"github.com/haempel/zgrab2/lib/http"
+=======
+	"github.com/zmap/zgrab2/lib/http"
+>>>>>>> master
 )
 
 // A Server is an HTTP server listening on a system-chosen port on the

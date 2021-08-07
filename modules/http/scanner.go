@@ -24,6 +24,12 @@ import (
 	"github.com/haempel/zgrab2"
 	"github.com/haempel/zgrab2/lib/http"
 	log "github.com/sirupsen/logrus"
+<<<<<<< HEAD
+=======
+	"github.com/haempel/zcrypto/tls"
+	"github.com/zmap/zgrab2"
+	"github.com/zmap/zgrab2/lib/http"
+>>>>>>> master
 	"golang.org/x/net/html/charset"
 )
 

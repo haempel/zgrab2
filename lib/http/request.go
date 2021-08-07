@@ -31,7 +31,11 @@ import (
 	"golang.org/x/text/width"
 
 	"github.com/haempel/zcrypto/tls"
+<<<<<<< HEAD
 	"github.com/haempel/zgrab2"
+=======
+	"github.com/zmap/zgrab2"
+>>>>>>> master
 )
 
 const (

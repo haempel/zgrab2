@@ -12,7 +12,11 @@ import (
 	"time"
 
 	"github.com/haempel/zcrypto/tls"
+<<<<<<< HEAD
 	"github.com/haempel/zgrab2"
+=======
+	"github.com/zmap/zgrab2"
+>>>>>>> master
 )
 
 // BEGIN Taken from handshake_server_test.go -- certs for TLS server

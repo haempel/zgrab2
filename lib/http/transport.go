@@ -27,8 +27,13 @@ import (
 	"time"
 
 	"github.com/haempel/zcrypto/tls"
+<<<<<<< HEAD
 	"github.com/haempel/zgrab2"
 	"github.com/haempel/zgrab2/lib/http/httptrace"
+=======
+	"github.com/zmap/zgrab2"
+	"github.com/zmap/zgrab2/lib/http/httptrace"
+>>>>>>> master
 	"golang.org/x/net/http/httpguts"
 )
 

@@ -27,6 +27,15 @@ import (
 	"github.com/haempel/zgrab2"
 	"github.com/haempel/zgrab2/lib/output"
 	"github.com/sirupsen/logrus"
+<<<<<<< HEAD
+=======
+	jsonKeys "github.com/haempel/zcrypto/json"
+	"github.com/haempel/zcrypto/tls"
+	"github.com/haempel/zcrypto/x509"
+	"github.com/haempel/zcrypto/x509/pkix"
+	"github.com/zmap/zgrab2"
+	"github.com/zmap/zgrab2/lib/output"
+>>>>>>> master
 )
 
 const doFailDiffs = false

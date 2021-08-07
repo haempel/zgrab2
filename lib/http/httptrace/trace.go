@@ -13,7 +13,11 @@ import (
 	"time"
 
 	"github.com/haempel/zcrypto/tls"
+<<<<<<< HEAD
 	"github.com/haempel/zgrab2/lib/http/nettrace"
+=======
+	"github.com/zmap/zgrab2/lib/http/nettrace"
+>>>>>>> master
 )
 
 // unique type to prevent assignment.
