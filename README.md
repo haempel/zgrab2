@@ -84,7 +84,8 @@ port=22
 ```
 ./zgrab2 multiple -c multiple.ini
 ```
-`Application Options` must be the initial section name. Other section names should correspond exactly to the relevant zgrab2 module name. The default name for each module is the command name. If the same module is to be used multiple times then `name` must be specified and unique. 
+`Application Options` must be the initial section name. Other section names should correspond exactly to the relevant zgrab2 module name. The default name for each module is the command name. If the same module is to be used multiple times then `name` must be specified and unique.  
+If the `name` field is defined explicitly in the ini file, it will replace module name in the json hirarchy.
 
 Multiple module support is particularly powerful when combined with input tags and the `--trigger` scanner argument. For example, this input contains targets with two different tags:
 
@@ -123,7 +124,25 @@ func init() {
 }
 ```
 
+### Change existing Module outputs
+
+To change the json output of existing modules, one have to adapt the used code of the corresponding module go-files in the `module` folder.  
+Every Module has its own parameters defined - usally as a struct.
+
+### Change used go moudles versions 
+
+Go modules have a pseudo version based on a git commit. If a new module version has to be imported in the project, change the modules verision in the `go.mod` file as described below.
+1. replace the module version with the commit hash of the update. e.g
+   - `github.com/sirupsen/logrus v1.8.1` 
+   - `github.com/sirupsen/logrus 6288211277ec7fae37a514d2e58a0daa15c57fe`
+2. `run go get <moudle name>`
+   - this will replace the commit hash with the correct go pseudo version
+  
+More information: see: this [blog entry](https://jfrog.com/blog/go-big-with-pseudo-versions-and-gocenter/).
+
 ### Output schema
+
+The python schema files are just for conversion to the needed database format. They don't affect the output of zgrab2 and are not up to date any more see [github issue](https://github.com/zmap/zgrab2/issues/312).
 
 To add a schema for the new module, add a module under schemas, and update [`schemas/__init__.py`](schemas/__init__.py) to ensure that it is loaded.
 
