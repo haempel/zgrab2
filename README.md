@@ -123,6 +123,17 @@ func init() {
     }
 }
 ```
+### Call hierarchy of the base routine
+
+Zgrab2 is of modular architecture. So every module has to implement required interfaces. These interfaces are called by the base routine of this program.
+The rough structure of program run is as follows:
+1. detect and register used modules (useful for multiple module usage)
+2. start all modules (func Process() in processing.go)
+   - create output queue for modules json output
+   - get grabbed information of module (func grabTarget in processing.go)
+     - calls RunScanner()  
+       - calls Scan() of the module ... 
+3. get and print summary
 
 ### Change existing Module outputs
 
