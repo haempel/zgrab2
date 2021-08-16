@@ -498,9 +498,7 @@ func (scan *scan) Grab() *zgrab2.ScanError {
 		defer resp.Body.Close()
 	}
 	scan.results.Response = resp
-	// move tls information to the same hirarchical depth as is is in other modules
-	scan.results.TLSLog = scan.results.Response.Request.TLSLog
-	scan.results.Response.Request.TLSLog = nil
+
 	if err != nil {
 		if urlError, ok := err.(*url.Error); ok {
 			err = urlError.Err
@@ -583,6 +581,11 @@ func (scan *scan) Grab() *zgrab2.ScanError {
 			m.Write(buf.Bytes())
 			scan.results.Response.BodySHA256 = m.Sum(nil)
 		}
+	}
+	// move tls information to the same hirarchical depth as is is in other modules
+	if scan.results.Response.Request.TLSLog != nil {
+		scan.results.TLSLog = scan.results.Response.Request.TLSLog
+		scan.results.Response.Request.TLSLog = nil
 	}
 
 	return nil

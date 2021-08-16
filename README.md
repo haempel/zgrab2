@@ -129,6 +129,8 @@ func init() {
 To change the json output of existing modules, one have to adapt the used code of the corresponding module go-files in the `module` folder.  
 Every Module has its own parameters defined - usally as a struct.
 
+If the outer module name of the json output should be changed, see `processing.go` line 169 in `grabTarget(...)`
+
 ### Change used go moudles versions 
 
 Go modules have a pseudo version based on a git commit. If a new module version has to be imported in the project, change the modules verision in the `go.mod` file as described below.
