@@ -11,13 +11,13 @@ You will need to have a valid `$GOPATH` set up, for more information about `$GOP
 
 Once you have a working `$GOPATH`, run:
 
-```
+```shell
 $ go get github.com/haempel/zgrab2
 ```
 
 This will install zgrab under `$GOPATH/src/github.com/zmap/zgrab2`
 
-```
+```shell
 $ cd $GOPATH/src/github.com/haempel/zgrab2
 $ make
 ```
@@ -26,7 +26,7 @@ $ make
 
 ZGrab2 supports modules. For example, to run the ssh module use
 
-```
+```shell
 ./zgrab2 ssh
 ```
 
@@ -66,7 +66,7 @@ domain.com
 To run a scan with multiple modules, a `.ini` file must be used with the `multiple` module. Below is an example `.ini` file with the corresponding zgrab2 command. 
 
 ***multiple.ini***
-```
+```ini
 [Application Options]
 output-file="output.txt"
 input-file="input.txt"
@@ -96,7 +96,7 @@ Multiple module support is particularly powerful when combined with input tags a
 
 Invoking zgrab2 with the following `multiple` configuration will perform an SSH grab on the first target above and an HTTP grab on the second target:
 
-```
+```ini
 [ssh]
 trigger="tagA"
 name="ssh22"
@@ -108,13 +108,29 @@ name="http80"
 port=80
 ```
 
+**ALERT**  
+The input-file and output-file options seem to be broken. A workaround could reached with the command:
+```shell
+./zgrab2 multiple -c multiple.ini -o output.txt -f input.csv
+```
+The content of multiple. ini could look like:
+```ini
+[http]
+name="protocol"
+port=443
+endpoint="/"
+use-https="true"
+```
+Protocol modifies the "outer protocol name" in the json output hierarchy, so do not change it to keep database queries simple.
+
+
 ## Adding New Protocols 
 
 Add module to modules/ that satisfies the following interfaces: `Scanner`, `ScanModule`, `ScanFlags`.
 
 The flags struct must embed zgrab2.BaseFlags. In the modules `init()` function the following must be included. 
 
-```
+```go
 func init() {
     var newModule NewModule
     _, err := zgrab2.AddCommand("module", "short description", "long description of module", portNumber, &newModule)
@@ -148,7 +164,7 @@ Go modules have a pseudo version based on a git commit. If a new module version 
 1. replace the module version with the commit hash of the update. e.g
    - `github.com/sirupsen/logrus v1.8.1` 
    - `github.com/sirupsen/logrus 6288211277ec7fae37a514d2e58a0daa15c57fe`
-2. `run go get <moudle name>`
+2. run `go get <moudle name>`
    - this will replace the commit hash with the correct go pseudo version
   
 More information: see: this [blog entry](https://jfrog.com/blog/go-big-with-pseudo-versions-and-gocenter/).
