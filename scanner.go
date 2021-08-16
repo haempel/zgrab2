@@ -32,10 +32,10 @@ func RunScanner(s Scanner, mon *Monitor, target ScanTarget) (string, ScanRespons
 	status, res, e := s.Scan(target)
 	var err *string
 	if e == nil {
-		mon.statusesChan <- moduleStatus{name: s.GetName(), st: statusSuccess}
+		mon.statusesChan <- moduleStatus{name: s.Protocol(), st: statusSuccess}
 		err = nil
 	} else {
-		mon.statusesChan <- moduleStatus{name: s.GetName(), st: statusFailure}
+		mon.statusesChan <- moduleStatus{name: s.Protocol(), st: statusFailure}
 		errString := e.Error()
 		err = &errString
 	}
