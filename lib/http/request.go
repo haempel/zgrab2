@@ -30,7 +30,7 @@ import (
 	"golang.org/x/text/unicode/norm"
 	"golang.org/x/text/width"
 
-	"github.com/haempel/zcrypto/tls"
+	"github.com/zmap/zcrypto/tls"
 	"github.com/haempel/zgrab2"
 )
 

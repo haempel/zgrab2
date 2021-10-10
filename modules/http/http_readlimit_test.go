@@ -11,7 +11,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/haempel/zcrypto/tls"
+	"github.com/zmap/zcrypto/tls"
 	"github.com/haempel/zgrab2"
 )
 

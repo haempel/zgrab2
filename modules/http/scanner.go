@@ -22,7 +22,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/haempel/zcrypto/tls"
+	"github.com/zmap/zcrypto/tls"
 	"github.com/haempel/zgrab2"
 	"github.com/haempel/zgrab2/lib/http"
 	log "github.com/sirupsen/logrus"

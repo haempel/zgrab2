@@ -11,8 +11,8 @@ import (
 	"strings"
 	"time"
 
-	"github.com/haempel/zcrypto/tls"
-	"github.com/haempel/zcrypto/x509"
+	"github.com/zmap/zcrypto/tls"
+	"github.com/zmap/zcrypto/x509"
 	log "github.com/sirupsen/logrus"
 )
 

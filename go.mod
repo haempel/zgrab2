@@ -6,7 +6,6 @@ require (
 	github.com/RumbleDiscovery/jarm-go v0.0.6
 	github.com/go-kit/kit v0.10.0 // indirect
 	github.com/golang/protobuf v1.5.2 // indirect
-	github.com/haempel/zcrypto v0.0.0-20210806143836-1a868e8f16d6 // indirect
 	github.com/prometheus/client_golang v1.11.0
 	github.com/sirupsen/logrus v1.8.1
 	github.com/zmap/rc2 v0.0.0-20190804163417-abaa70531248 // indirect
