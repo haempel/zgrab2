@@ -11,6 +11,7 @@ require (
 	github.com/zmap/rc2 v0.0.0-20190804163417-abaa70531248 // indirect
 	github.com/zmap/zcrypto v0.0.0-20210826151153-30e1a9e0a8f5
 	github.com/zmap/zflags v1.4.0-beta.1.0.20200204220219-9d95409821b6
+	github.com/zmap/zgrab2 v0.1.7
 	golang.org/x/crypto v0.0.0-20210322153248-0c34fe9e7dc2
 	golang.org/x/net v0.0.0-20210405180319-a5a99cb37ef4
 	golang.org/x/sys v0.0.0-20210603081109-ebe580a85c40

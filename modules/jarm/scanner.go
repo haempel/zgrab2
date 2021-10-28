@@ -5,7 +5,7 @@ package jarm
 import (
 	_ "fmt"
 	jarm "github.com/RumbleDiscovery/jarm-go"
-	"github.com/haempel/zgrab2"
+	"github.com/zmap/zgrab2"
 	"io"
 	"log"
 	"net"
